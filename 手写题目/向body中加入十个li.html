@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>向BODY中加入是个LI</title>
+  </head>
+
+  <body>
+    <script>
+      /**
+        为了性能的优化，使用了createDocumentFragment()
+      */
+      let doc = document.getElementsByTagName('body')[0];
+      let ul = document.createElement('ul');
+      let len = 10;
+      for (let i = 0; i < len; i++) {
+        let li = document.createElement('li');
+        li.innerText = i;
+        ul.appendChild(li);
+      }
+      let fragment = document.createDocumentFragment();
+      fragment.appendChild(ul);
+      doc.appendChild(fragment);
+    </script>
+  </body>
+</html>

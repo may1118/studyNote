@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>水平垂直居中</title>
+    <style>
+      .app {
+        display: flex;
+        justify-content: space-around;
+      }
+      .outer {
+        height: 200px;
+        width: 200px;
+        background-color: tomato;
+      }
+      .inner {
+        height: 50px;
+        width: 100px;
+        background-color: aqua;
+      }
+      .outer-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .outer-2 {
+        position: relative;
+      }
+      .inner-2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .outer-3 {
+        position: relative;
+      }
+      .inner-3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: -25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="outer outer-1">
+        <div class="inner inner-1"></div>
+      </div>
+      <div class="outer outer-2">
+        <div class="inner inner-2"></div>
+      </div>
+      <div class="outer outer-3">
+        <div class="inner inner-3"></div>
+      </div>
+    </div>
+  </body>
+</html>

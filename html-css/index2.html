@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>清除浮动</title>
+  <style>
+    .app {
+      background-color: tomato;
+      /* overflow: hidden; */
+    }
+
+    .float {
+      height: 100px;
+      width: 100px;
+      background-color: blue;
+      float: left;
+    }
+
+    .app::after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+
+    /* 三角形 */
+    .normal {
+      height: 0;
+      width: 0;
+      border-width: 15px;
+      border-style: solid;
+      border-color: transparent transparent transparent green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="float">float</div>
+  </div>
+  <div class="normal">normal</div>
+</body>
+
+</html>

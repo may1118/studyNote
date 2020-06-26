@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS获取盒子宽高</title>
+  <style>
+    #app {
+      height: 100px;
+      width: 100px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">box</div>
+  <script>
+    const info = getComputedStyle(app)
+    console.log('info: ', info)
+    console.log(info.height)
+    console.log(info.width)
+  </script>
+</body>
+
+</html>
