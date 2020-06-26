@@ -19,3 +19,12 @@
 - 正则表达式：没啥用的一个目录
 - 之前的记录：之前学习、看书的一些记录吧，好像也没啥用
 
+
+
+1. 网站目录：https://www.kancloud.cn/lemon-m/js-html-css/998101
+2. 算法目录：https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md
+3. 冴羽大大博客：https://github.com/mqyqingfeng/Blog
+4. 阮一峰大大博客flex为例：https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+5. 阮一峰大大的ES6：https://es6.ruanyifeng.com/
+6. 前端必备需要手写代码：https://juejin.im/post/5c9edb066fb9a05e267026dc
+
